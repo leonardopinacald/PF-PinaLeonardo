@@ -250,12 +250,11 @@ main{
 
     .us-contacto{
         width: 90%; 
-        margin: 1rem; 
+        margin: 0 auto; 
     
         .us{
-            width: 400px;
+            width: 90%;
             height: auto;
-            margin: 1rem;
             border-radius: 10px;
             justify-content: center;
             h1{
@@ -275,6 +274,8 @@ main{
         }
         .where{
             width: 90%;
+            margin: 1rem;
+            justify-content: center;
             h2{
             width: 40%;
            
@@ -306,6 +307,68 @@ main{
         }
         }    
     }
+    /*productos*/
+    .productos{
+       
+        .prod-box{
+            
+            img:hover{
+                transform: scale(1,1.1);
+                border-radius: 20px;
+                background-color: $color-nav-dark;
+                transition: all 1s;
+            }
+            h4{
+                padding: 1rem;
+                margin: 2rem;
+            } 
+            a{
+                text-decoration: none;
+                color: $color-nav-dark;
+            }      
+        }  
+    }
+    /* Carrito de Compra*/
+
+.compra{
+    width: 90%;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    .info{
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+    
+    }
+    .cart{
+        background-color: $color-caja;
+        width: 80%;
+        height: 30rem;
+        margin: 1rem auto;
+        padding: 1rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        img{
+            width: 250px;
+            height: 250px;
+            padding-bottom: 0.5rem;
+        }
+        h3{
+            padding: 0.5rem;
+            margin: 1rem;
+            text-align: center;
+        } 
+    }
+}
+
+.login{
+    width: 80%;
+    height: 80%;
+  
+}
 
 
 
