@@ -19,7 +19,7 @@ main{
 
     .prod{
         background-color: $color-caja;
-        width: 70%;
+        width: 40%;
         text-align: center;
         align-items: center;
         justify-items: center;
@@ -29,6 +29,17 @@ main{
         a{
            text-decoration: none;
             color: black; 
+        }
+    
+    }
+    .prod:hover{
+        background-color: $color-nav-dark;
+        transform: scale(1,1.1);
+        transition: 0.25s;
+
+        a:hover{
+            color: $color-caja;
+
         }
     }
 
