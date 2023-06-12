@@ -56,7 +56,7 @@ main {
   align-items: center; }
   .destacados .prod {
     background-color: rgba(228, 228, 228, 0.867);
-    width: 40%;
+    width: 50%;
     text-align: center;
     align-items: center;
     justify-items: center;
@@ -175,6 +175,7 @@ main {
 /* Carrito de Compra*/
 .compra {
   width: 90%;
+  height: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
@@ -222,7 +223,7 @@ main {
 @media only screen and (max-width: 575px) {
   /*Index*/
   .prod {
-    width: 90%;
+    width: 100%;
     margin: auto;
     border-radius: 10px; }
     .prod a {
