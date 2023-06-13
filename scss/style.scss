@@ -149,6 +149,7 @@ main{
         justify-items: center;
         text-align: center;
         justify-items: center;
+    
         img{
             width: 200px;
             height: 200px;
@@ -160,6 +161,7 @@ main{
             background-color: $color-nav-dark;
             transition: all 1s;
         }
+        
         h4{
             padding: 1rem;
             margin: 2rem;
@@ -167,7 +169,15 @@ main{
         a{
             text-decoration: none;
             color: $color-nav-dark;
-        }      
+        }
+        a:hover{
+            color: $color-caja;
+
+        }
+             
+    }
+    .prod-box:hover{
+        background-color: $color-nav-dark;
     }  
 }
 /* Carrito de Compra*/
@@ -224,7 +234,7 @@ main{
 }
 /* Media queries */
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 480px){
 
 
     /*Index*/
@@ -377,7 +387,7 @@ main{
 }
 
 .login{
-    width: 80%;
+    width: 60%;
     height: 80%;
   
 }

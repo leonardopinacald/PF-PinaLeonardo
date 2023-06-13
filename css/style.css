@@ -31,7 +31,7 @@ footer {
   color: #2b3035;
   width: 95%;
   padding: 1rem;
-  margin: 2rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -171,6 +171,10 @@ main {
     .productos .prod-box a {
       text-decoration: none;
       color: #2b3035; }
+    .productos .prod-box a:hover {
+      color: rgba(228, 228, 228, 0.867); }
+  .productos .prod-box:hover {
+    background-color: #2b3035; }
 
 /* Carrito de Compra*/
 .compra {
@@ -220,7 +224,7 @@ main {
   justify-items: center; }
 
 /* Media queries */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 480px) {
   /*Index*/
   .prod {
     width: 100%;
@@ -327,5 +331,5 @@ main {
         margin: 1rem;
         text-align: center; }
   .login {
-    width: 80%;
+    width: 60%;
     height: 80%; } }
