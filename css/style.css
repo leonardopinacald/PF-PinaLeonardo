@@ -249,10 +249,10 @@ main {
         height: auto; }
   /*nosotros y contacto */
   .us-contacto {
-    width: 90%;
-    margin: 0 auto; }
+    width: 100%;
+    margin: auto; }
     .us-contacto .us {
-      width: 90%;
+      width: 80%;
       height: auto;
       border-radius: 10px;
       justify-content: center; }
