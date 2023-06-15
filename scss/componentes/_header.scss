@@ -1,10 +1,22 @@
 header{
     width: 100%;
     margin: 0 0 auto;
-    img:hover{
-        transform: scale(1,1.1);
-        border-radius: 10px;
+    .container-fluid{
+        img{
+            margin: 1rem ;
+        }
+        img:hover{
+            transform: scale(1,1);
+            transition: 0.5s;
+            border-radius: 5px;
+            background-color: none;
+        }
     }
+    .navbar-nav{
+        margin: 0.5rem;
+        
+    }
+    
     .menu{
         margin: 0;
         background-color: $color-nav-dark;
@@ -21,6 +33,7 @@ header{
         transform: scale(1,1.1);
         transition: 0.5s;
     }
+    
    
 
 }

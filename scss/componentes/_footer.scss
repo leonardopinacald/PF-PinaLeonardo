@@ -6,13 +6,33 @@ footer{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     justify-items: center;
     border-radius: 10px;
-    p{
+    h4{
+        margin: auto;
         text-align: center;
         justify-content: center;
     }
+    .redesSociales{
+        a{
+            margin: 0.5rem;
+        }
+        
+    }
 
+}
+@media only screen and (max-width: 480px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        
+        .redesSociales{
+            
+            margin: 0.5rem;
+            padding: 0;
+        }
+    }
 }

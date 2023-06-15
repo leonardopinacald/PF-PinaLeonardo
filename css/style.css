@@ -2,9 +2,15 @@
 header {
   width: 100%;
   margin: 0 0 auto; }
-  header img:hover {
-    transform: scale(1, 1.1);
-    border-radius: 10px; }
+  header .container-fluid img {
+    margin: 1rem; }
+  header .container-fluid img:hover {
+    transform: scale(1, 1);
+    transition: 0.5s;
+    border-radius: 5px;
+    background-color: none; }
+  header .navbar-nav {
+    margin: 0.5rem; }
   header .menu {
     margin: 0;
     background-color: #2b3035; }
@@ -34,13 +40,25 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   justify-items: center;
   border-radius: 10px; }
-  footer p {
+  footer h4 {
+    margin: auto;
     text-align: center;
     justify-content: center; }
+  footer .redesSociales a {
+    margin: 0.5rem; }
+
+@media only screen and (max-width: 480px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center; }
+    footer .redesSociales {
+      margin: 0.5rem;
+      padding: 0; } }
 
 main {
   width: 100%;
@@ -78,13 +96,15 @@ main {
     width: 90%; }
     .destacados .brands .box {
       background-color: rgba(228, 228, 228, 0.867);
-      margin: 2rem;
+      margin: 1rem;
       padding: 1rem;
       display: flex;
-      border-radius: 10px; }
+      flex-direction: row;
+      border-radius: 10px;
+      align-items: center; }
       .destacados .brands .box h3 {
         padding: 1rem;
-        margin: 2rem;
+        margin: 1rem;
         text-align: center; }
 
 /*Nosotros - contacto*/
@@ -124,7 +144,8 @@ main {
     border-radius: 10px; }
   .us-contacto .where .maps {
     width: 90%;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     .us-contacto .where .maps p {
       margin: 0.5rem; }
   .us-contacto .where .map1 {
@@ -226,6 +247,10 @@ main {
 /* Media queries */
 @media only screen and (max-width: 480px) {
   /*Index*/
+  .oferta {
+    width: 95%;
+    margin: 0.5rem;
+    height: auto; }
   .prod {
     width: 100%;
     margin: auto;
@@ -235,8 +260,8 @@ main {
       color: black; }
   .brands {
     padding: 1rem;
-    margin: auto;
-    width: 95%; }
+    margin: 1rem;
+    width: 100%; }
     .brands .box {
       width: 95%;
       padding: 1rem;
@@ -252,7 +277,8 @@ main {
     width: 100%;
     margin: auto; }
     .us-contacto .us {
-      width: 80%;
+      width: 90%;
+      margin: 1rem;
       height: auto;
       border-radius: 10px;
       justify-content: center; }
@@ -272,7 +298,7 @@ main {
       .us-contacto .where h2 {
         width: 40%; }
       .us-contacto .where .maps {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-items: center; }
@@ -280,16 +306,21 @@ main {
           margin: 0.5rem; }
       .us-contacto .where .map1 {
         background-color: rgba(228, 228, 228, 0.867);
-        width: 400px;
+        width: 100%;
         margin: 1rem;
         padding: 1rem;
         border-radius: 10px; }
+        .us-contacto .where .map1 iframe {
+          width: 20rem; }
       .us-contacto .where .map2 {
         background-color: rgba(228, 228, 228, 0.867);
-        width: 400px;
+        width: 100%;
         margin: 1rem;
         padding: 1rem;
-        border-radius: 10px; }
+        border-radius: 10px;
+        justify-content: center; }
+        .us-contacto .where .map2 iframe {
+          width: 20rem; }
   /*productos*/
   .productos .prod-box img:hover {
     transform: scale(1, 1.1);
@@ -304,17 +335,17 @@ main {
     color: #2b3035; }
   /* Carrito de Compra*/
   .compra {
-    width: 90%;
+    width: 100%;
     justify-items: center;
     align-items: center;
     margin: auto; }
     .compra .info {
-      width: 80%;
+      width: 90%;
       height: auto;
       margin: 1rem auto; }
     .compra .cart {
       background-color: rgba(228, 228, 228, 0.867);
-      width: 80%;
+      width: 90%;
       height: 30rem;
       margin: 1rem auto;
       padding: 1rem;
@@ -331,5 +362,6 @@ main {
         margin: 1rem;
         text-align: center; }
   .login {
-    width: 60%;
-    height: 80%; } }
+    width: 90%;
+    height: 70%;
+    margin: 5rem auto; } }
