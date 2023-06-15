@@ -144,8 +144,7 @@ main {
     border-radius: 10px; }
   .us-contacto .where .maps {
     width: 90%;
-    display: flex;
-    flex-wrap: wrap; }
+    display: flex; }
     .us-contacto .where .maps p {
       margin: 0.5rem; }
   .us-contacto .where .map1 {
