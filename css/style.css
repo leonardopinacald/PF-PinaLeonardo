@@ -184,7 +184,7 @@ main {
   flex-wrap: wrap;
   justify-items: center;
   align-items: center;
-  margin: auto; }
+  margin: 5rem auto; }
   .compra .info {
     background-color: rgba(228, 228, 228, 0.867);
     width: 40%;
@@ -217,7 +217,7 @@ main {
 .login {
   width: 50%;
   height: 50%;
-  margin: 2.5rem auto 2em;
+  margin: 7rem auto 7rem;
   padding: 5rem;
   background-color: rgba(228, 228, 228, 0.867);
   border-radius: 10px;
